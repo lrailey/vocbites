@@ -1,0 +1,801 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'FuturaX';
+    src: url('klavika-regular-webfont.eot');
+    src: local('FuturaX'),
+        url('klavika-regular-webfont.woff') format('woff'),
+        url('klavika-regular-webfont.ttf') format('truetype'),
+        url('klavika-regular-webfont.svg#webfontiYJyHRas') format('svg');
+}
+
+body {
+background-color: #ffffff;	
+}
+
+.noscroll {	
+}
+
+h1 {
+font-weight: 100;
+font-family: FuturaX, Arial, sans-serif;
+text-decoration: none;
+font-size: 1.7em;	
+color: #274A80;	
+}
+
+h2 {
+font-weight: 100;
+font-family: FuturaX, Arial, sans-serif;
+text-decoration: none;
+font-size: 1.4em;
+color: #454545;
+margin-top: 15px;
+}
+
+p {
+font-weight: 100;
+font-family: FuturaX, Arial, sans-serif;
+text-decoration: none;
+font-size: 15px;
+color: #333333;	
+line-height: 20px;
+margin-top: 15px;
+margin-bottom: 20px;
+}
+
+ol {
+margin-top: 10px;	
+margin-left: 25px;
+margin-bottom: 25px;
+}
+
+ol li {
+font-weight: normal;
+font-family: FuturaX, Arial, sans-serif;
+text-decoration: none;
+font-size: 15px !important;
+line-height: 30px;		
+padding-left: 30px;
+list-style: decimal;
+color: #333333;
+}
+
+.left {
+float: left;	
+}
+
+.right {
+float: right;	
+}
+
+.voc_bgwrapper {
+height: 100%;
+width: 100%;
+position:absolute;	
+z-index: 1;
+background-color: #ffffff;
+}
+
+.voc_intro {
+width: 100%;
+height: 100%;
+position: absolute;	
+z-index: 3;
+}
+
+.voc_text {
+max-width: 1000px;
+min-height: 240px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 100px;	
+padding-top: 20px;
+padding-bottom: 20px;
+display: none;
+}
+
+.voc_bg {
+width: 100%;
+height: 100%;
+position: absolute;	
+z-index: 2;	
+opacity: 0.5;
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+display: none;
+}
+
+.voc_header {
+background-color: #333333;
+width: 100%;
+min-height: 80px;
+position: absolute;
+z-index: 99;	
+}
+
+.voc_head {
+max-width: 1000px;
+padding-top: 15px;
+text-align: left;
+margin-left: auto;
+margin-right: auto;	
+}
+
+.voc_head .left {
+max-width: 300px;
+text-align: left;
+float: left;	
+}
+
+.voc_head .right-ex {
+max-width: 600px;
+padding-top: 2px;
+text-align: right;
+float: right;	
+}
+
+
+
+.right-ex .button {
+margin-left: 5px;	
+}
+
+.voc_footer {
+background-color: #e9e9e9;
+width: 100%;
+height: 80px;
+position: absolute;
+z-index: 99;	
+bottom: 0px;
+display:none;
+}
+
+.voc_footer h3 {
+color: #333333;
+font-size: 15px;
+font-family: FuturaX, Arial, sans-serif;
+margin-top: 15px;
+}
+
+.voc_footer div {
+max-width: 1000px;
+padding-top: 15px;
+text-align: left;
+margin-left: auto;
+margin-right: auto;	
+}
+
+.voc_slider {
+padding-left: 0px;
+padding-right: 0px;	
+background: url(img/box-shadow.png) bottom no-repeat;
+background-position: 10px 420px;
+}
+
+section {
+
+}
+
+.slides h1 {
+margin-top: 100px !important;	
+}
+
+.close {
+float: right;
+margin-top: 0px;
+cursor: pointer;
+-webkit-transition-duration: 0.3s, 0.3s; /* Safari */ transition-duration: 0.3s, 0.3s;	
+}
+
+.close:hover {
+opacity: .6;	
+-webkit-transition-duration: 0.3s, 0.3s; /* Safari */ transition-duration: 0.3s, 0.3s;
+}
+
+.voc_contents h2 {
+	margin-top: 0px;
+	padding-top: 0px;
+	font-size: 22px;
+	color: #274A80;
+}
+
+.voc_contents h3 {
+	margin-top: 0px;
+	padding-top: 0px;
+	color: #333333;
+	font-size: 19px;
+	font-family: FuturaX, Arial, sans-serif;
+}
+
+.voc_contentswrapper {
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0px;
+left: 0px;
+z-index: 100;
+background-image: url(../images/bg.png);
+display: none;
+}
+
+.voc_contents {
+	max-width: 550px;
+	min-height: 600px;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 25px;
+	background-color: #ffffff;
+	border: 1px solid #274A80;
+	-webkit-box-shadow: #999999 0px 0px 3px;
+	-moz-box-shadow: #999999 0px 0px 3px;
+	box-shadow: #999999 0px 0px 3px;
+	
+}
+
+.voc_contents a {
+color: #00ADEF;
+-webkit-transition-duration: 0.3s, 0.3s; /* Safari */ transition-duration: 0.3s, 0.3s;		
+}
+
+.voc_contents a:hover {
+color: #A5DA00;	
+text-decoration: none !important;
+-webkit-transition-duration: 0.3s, 0.3s; /* Safari */ transition-duration: 0.3s, 0.3s;	
+}
+
+/* catalina buttons */
+
+
+.button {
+display: inline-block;
+  margin-bottom: 0; // For input.btn
+  font-weight: 100;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  text-transform: uppercase;
+  border: 1px solid #274A80;
+	
+	padding: 11px 20px;	
+	margin: 2px;
+	
+	-webkit-box-shadow: #acdd26 0px 0px 3px;
+	-moz-box-shadow: #acdd26 0px 0px 3px;
+	box-shadow: #acdd26 0px 0px 3px;
+	color: #274A80;
+	background-color: #ffffff;
+	background-position: 10px center;
+	background-repeat: no-repeat;
+	font-weight: normal;
+	font-family: FuturaX, Arial, sans-serif;
+	text-decoration: none;
+	font-size: 15px;
+	width: auto;
+	text-transform: uppercase;
+	-webkit-transition-duration: 0.3s, 0.3s; /* Safari */ transition-duration: 0.3s, 0.3s;	
+}
+
+.button:hover {
+	border: 1px solid #274A80;
+	-webkit-box-shadow: #00ADEF 0px 0px 3px;
+	-moz-box-shadow: #00ADEF 0px 0px 3px;
+	box-shadow: #00ADEF 0px 0px 3px;
+	background-color: #274A80;
+	color: #ffffff;
+	-webkit-transition-duration: 0.3s, 0.3s; /* Safari */ transition-duration: 0.3s, 0.3s;	
+}
+
+/* 
+Use Full Button Class when 100% width is desired, relative to container - useful for making buttons align in horizontal width when stacked vertically.
+DO NOT use when displaying buttons inline horizontally.
+*/
+.catalina-fullbtn {width: 100%;text-align: left;}
+
+padding-left: 50px {padding-left: 50px;}
+
+/* Button Icon Classes - Use In Addition to Standard Button Class */
+
+/* Used in Add-Remove Control but can be used elsewhere too if needed. Reset can be a Refresh */
+.catalina-iconaddarrow{background-image: url(../images/btn/continue.png); padding-left: 50px;}
+.catalina-iconremovearrow{background-image: url(../images/btn/remove.png); padding-left: 50px;}
+.catalina-iconclear{background-image: url(../images/btn/cancel.png); padding-left: 50px;}
+.catalina-iconreset{background-image: url(../images/btn/reset.png); padding-left: 50px;}
+.catalina-iconpoint{background-image: url(../images/btn/point.png); padding-left: 50px;}
+.catalina-iconpointl{background-image: url(../images/btn/pointl.png); padding-left: 50px;}
+.catalina-iconcontents{background-image: url(../images/btn/contents.png); padding-left: 50px;}
+.catalina-iconpoint.voc1{  background-image: url(../images/btn/point.png);
+  padding-right: 15px;
+  padding-left: 55px;
+  background-position: 13px center !important;
+  text-align: right;}
+
+/* Cancel, Save and Save & Close Icons */
+.catalina-iconcancel{background-image: url(../images/btn/cancel.png); padding-left: 50px;}
+.catalina-iconsave{background-image: url(../images/btn/save.png); padding-left: 50px;}
+.catalina-iconsaveclose{background-image: url(../images/btn/saveclose.png); padding-left: 50px;}
+.catalina-iconsavegrey{background-image: url(../images/btn/save-grey.png); padding-left: 50px;}
+
+/* Add & Delete Icons */
+.catalina-iconadd{background-image: url(../images/btn/plus.png); padding-left: 50px;}
+.catalina-icondelete{background-image: url(../images/btn/trash.png); padding-left: 50px;}
+
+/* Approval Icon */
+.catalina-iconapproveblue{background-image: url(../images/btn/approve.png); padding-left: 50px;}
+
+/* Lock & Unlock Icons */
+.catalina-iconlocked{background-image: url(../images/btn/lock.png); padding-left: 50px;}
+.catalina-iconunlocked{background-image: url(../images/btn/unlock.png); padding-left: 50px;}
+
+/* Search Icons - Blue Icon can be used for details & view as well */
+.catalina-iconsearchgreen{background-image: url(../images/btn/search.png); padding-left: 50px;}
+.catalina-iconsearchblue{background-image: url(../images/btn/view.png); padding-left: 50px;}
+.catalina-iconsearchgrey{background-image: url(../images/btn/search-grey.png); padding-left: 50px;}
+
+/* Icon can be used for alternate checkmark and Okay buttons */
+.catalina-iconokay{background-image: url(../images/btn/approve-green.png); padding-left: 50px;}
+
+/* Next & Previous Icons */
+.catalina-iconprevious{background-image: url(../images/btn/previous.png); padding-left: 50px;}
+.catalina-iconnext{background-image: url(../images/btn/continue.png); padding-left: 50px;}
+
+/* File& Upload Icons	 */
+.catalina-iconfile{background-image: url(../images/btn/draft.png); padding-left: 50px;}
+.catalina-iconupload{background-image: url(../images/btn/upload.png); padding-left: 50px;}
+
+/* Edit Pencil Icon */
+.catalina-iconfile{background-image: url(../images/btn/edit.png); padding-left: 50px;}
+
+/* Play Icon */
+.catalina-iconplay{background-image: url(../images/btn/executing.png); padding-left: 50px;}
+
+/* Message Type & Login Icons */
+.catalina-iconinfo{background-image: url(../images/btn/info-mid.png); padding-left: 50px;}
+.catalina-iconhelp{background-image: url(../images/btn/help-mid.png); padding-left: 50px;}
+.catalina-iconerror{background-image: url(../images/btn/error-mid.png); padding-left: 50px;}
+.catalina-iconwarning{background-image: url(../images/btn/warning-mid.png); padding-left: 50px;}
+.catalina-iconlogin{background-image: url(../images/btn/secure-mid.png); padding-left: 50px;}
+
+/* Settings Icon is Longer */
+.catalina-iconsettings{background-image: url(../images/btn/save_settings.png); padding-left: 60px;}
+.catalina-iconsettingsgrey{background-image: url(../images/btn/save_settings-grey.png); padding-left: 60px;}
+
+#page {
+  max-width: 1000px;
+  height: 800px;
+}
+
+
+.voc_text {
+height: 600px;	
+
+}
+
+.voc_x {
+height: 250px;	
+}
+
+#container {
+		width: 100%;
+		margin: auto;
+   		 }
+    #container > div {
+		-webkit-box-shadow: 0 4px 15px -5px #555;
+		box-shadow: 0 4px 15px -5px #555;
+		background-color: #fff;
+		width:190px;
+		padding:2px;
+		margin:5px;
+		display: inline-block;
+		height: 263px;
+		float: left;
+			-webkit-transition-duration: 0.3s, 0.3s; /* Safari */ transition-duration: 0.3s, 0.3s;	
+	}
+	
+	#container > div:hover {
+	background-color: #333333;
+		-webkit-transition-duration: 0.3s, 0.3s; /* Safari */ transition-duration: 0.3s, 0.3s;		
+	}
+	#container > div img {
+		padding: 0px;
+		display: block;
+		width: 90%;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		-webkit-transition-duration: 0.3s, 0.3s; /* Safari */ transition-duration: 0.3s, 0.3s;	
+	}
+	
+	#container h2 {
+	 text-align: center;	
+	 line-height: 0.9em;
+	 padding-bottom: 0px;
+	 margin-bottom: 0px;
+	 padding-top: 0px;
+	 margin-top: 10px;
+	}
+	
+	#container p {
+	 text-align: center;	
+	 font-size: 0.9em;
+	 line-height: 0.9em;
+	 margin-top: 6px;
+	 padding-top: 0px;
+	}
+	
+	#container > div:hover h2 {
+	color: #ffffff;
+		-webkit-transition-duration: 0.3s, 0.3s; /* Safari */ transition-duration: 0.3s, 0.3s;		
+	}
+	
+	#container > div:hover p {
+	color: #ffffff;
+		-webkit-transition-duration: 0.3s, 0.3s; /* Safari */ transition-duration: 0.3s, 0.3s;		
+	}
+	#container > div:hover img {
+		-webkit-transition-duration: 0.3s, 0.3s; /* Safari */ transition-duration: 0.3s, 0.3s;	
+		width: 100%;
+	}
+@media screen and (max-width: 800px) {
+	
+#container {
+		width: 600px;
+		margin: auto;
+}
+#container > div {
+		-webkit-box-shadow: 0 4px 15px -5px #555;
+		box-shadow: 0 4px 15px -5px #555;
+		background-color: #fff;
+		width:190px;
+		padding:2px;
+		margin:5px;
+		display: inline-block;
+		height: 300px;
+		float: left;
+		
+}
+#container > div img {
+		padding: 0px;
+		display: block;
+		width: 100%;
+}
+	
+	h1.tlt {
+	text-align: center;
+	padding-bottom: 10px;
+	}
+	
+	h2.tlt {
+	text-align: center;	
+	padding-bottom: 10px;
+	}
+	
+    .voc_head .left {
+max-width: 300px;
+text-align: center;
+float: none;	
+margin-left:auto;
+margin-right: auto;
+clear: both;
+}
+
+.voc_text {
+height: 100%;	
+}
+
+.voc_head .right-ex {
+width: 530px;
+padding-top: 20px;
+text-align: center;
+margin-left:auto;
+margin-right: auto;
+clear: both;
+padding-bottom: 20px;
+float: none;
+}
+
+.voc_header {
+padding-bottom: 20px;	
+}
+
+.voc_text {
+margin-top: 160px;
+padding-left: 15px;
+padding-right: 15px;	
+}
+
+#page {
+  max-width: 1000px;
+  height: 500px;
+}
+
+.voc_slider {
+background-image: none;	
+}
+
+
+.reveal .slides {
+margin-top: 65px !important;	
+}
+
+.reveal img {
+width: 1000px !important;
+height: 450px !important;	
+}
+
+.slide {
+height: 450px !important;	
+}
+
+.tlt {
+font-size: 1.2em !important;	
+}
+
+.tlt {
+font-size: 1.1em !important;	
+}
+
+}
+
+@media screen and (max-width: 601px) {
+	
+#container {
+		width: 400px;
+		margin: auto;
+}
+#container > div {
+		-webkit-box-shadow: 0 4px 15px -5px #555;
+		box-shadow: 0 4px 15px -5px #555;
+		background-color: #fff;
+		width:190px;
+		padding:2px;
+		margin:5px;
+		display: inline-block;
+		height: 300px;
+		float: left;
+		
+}
+#container > div img {
+		padding: 0px;
+		display: block;
+		width: 100%;
+}
+
+   .voc_head .left {
+max-width: 300px;
+text-align: center;
+float: none;	
+margin-left:auto;
+margin-right: auto;
+clear: both;
+}
+
+.voc_text {
+margin-top: 260px;
+}
+
+.voc_head .right-ex {
+width: 300px !important;
+padding-top: 20px;
+text-align: center;
+margin-left:auto;
+margin-right: auto;
+clear: both;
+padding-bottom: 20px;
+float: none;
+}
+
+.voc_head .right-ex .button {
+float: none;
+clear: both;	
+width: 250px;
+text-align: left;
+padding-left: 55px;
+}
+
+.voc_header .right-ex .catalina-iconpoint {
+background-position: 15px center !important;
+padding-right: 20px;
+}
+	
+}
+	
+
+@media screen and (max-width: 500px) {
+	
+	#container {
+		width: 200px;
+		margin: auto;
+   		 }
+    #container > div {
+		-webkit-box-shadow: 0 4px 15px -5px #555;
+		box-shadow: 0 4px 15px -5px #555;
+		background-color: #fff;
+		width:190px;
+		padding:2px;
+		margin:5px;
+		display: inline-block;
+		height: 300px;
+		float: left;
+		
+	}
+	#container > div img {
+		padding: 0px;
+		display: block;
+		width: 100%;
+	}
+	
+	h1.tlt {
+	text-align: center;
+	padding-bottom: 10px;
+	}
+	
+	h2.tlt {
+	text-align: center;	
+	padding-bottom: 10px;
+	}
+	
+   .voc_head .left {
+max-width: 300px;
+text-align: center;
+float: none;	
+margin-left:auto;
+margin-right: auto;
+clear: both;
+}
+
+.voc_text {
+height: 100%;
+}
+
+.voc_head .right-ex {
+width: 300px !important;
+padding-top: 20px;
+text-align: center;
+margin-left:auto;
+margin-right: auto;
+clear: both;
+padding-bottom: 20px;
+float: none;
+}
+
+.voc_head .right-ex .button {
+float: none;
+clear: both;	
+width: 250px;
+text-align: left;
+padding-left: 55px;
+}
+
+.voc_header .right-ex .catalina-iconpoint {
+background-position: 15px center !important;
+padding-right: 20px;
+}
+
+.voc_header {
+padding-bottom: 20px;	
+}
+
+.voc_text {
+margin-top: 260px;
+padding-left: 2px;
+padding-right: 2px;
+max-width: 300px !important;	
+}
+
+.cd-background-wrapper {
+margin-top: 50px;	
+}
+
+.reveal .slides {
+margin-top: 35px !important;	
+}
+
+.reveal img {
+width: 1000px !important;
+height: 450px !important;	
+}
+
+.slide {
+height: 450px !important;	
+}
+
+h1 {
+font-weight: 100;
+font-family: FuturaX, Arial, sans-serif;
+text-decoration: none;
+font-size: 1.2em;	
+color: #274A80;	
+}
+
+h2 {
+font-weight: 100;
+font-family: FuturaX, Arial, sans-serif;
+text-decoration: none;
+font-size: 1.0em;
+color: #454545;
+margin-top: 15px;
+}
+
+p {
+font-weight: 100;
+font-family: FuturaX, Arial, sans-serif;
+text-decoration: none;
+font-size: 15px;
+color: #333333;	
+line-height: 20px;
+margin-top: 15px;
+margin-bottom: 20px;
+}
+
+ol {
+margin-top: 10px;	
+margin-left: 25px;
+margin-bottom: 25px;
+}
+
+ol li {
+font-weight: normal;
+font-family: FuturaX, Arial, sans-serif;
+text-decoration: none;
+font-size: 15px;
+line-height: 30px;		
+padding-left: 30px;
+list-style: decimal;
+color: #333333;
+}
+
+h1.tlt {
+font-size: 1.0em !important;	
+}
+
+h2.tlt {
+font-size: 1.0em !important;	
+}
+}
+
+    @media screen and (max-width: 500px) {
+	  .reveal h1 {
+		font-size: 2.2em !important;  
+	  }
+	  
+	  .reveal h2 {
+		font-size: 2.0em !important;  
+	  }
+	  
+	  .reveal li {
+		font-size: 1.8em !important;  
+	  }
+	  
+	  .reveal p {
+		font-size: 1.8em !important;  
+	  }
+	  
+	  .reveal blockquote {
+		font-size: 1.8em !important;  
+	  }
+	  
+	  h1.tlt {
+font-size: 1.0em !important;	
+}
+
+h2.tlt {
+font-size: 1.0em !important;	
+}
+  }
+  
+  @media screen and (max-height: 500px) {
+	  
+	  .voc_text {
+		overflow: scroll; 
+		width: 100% !important;
+		max-width: none !important;
+		padding-left: 20px;
+		padding-right: 20px; 
+	  }
+  }
+  
+  

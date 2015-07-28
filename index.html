@@ -52,17 +52,31 @@
     </div>
 </section>
 
-<section class="slide2" id="slide2-fade">
-	<div class="blue-point altbag-point">
+<section class="slide2">
+	<div class="blue-point altbag-point" id="slide2-fade">
     	<h1>Generally, one large trip takes places weekly or monthly with fill-in trips taking place up to 2 or 3 times a week.</h1>
     </div>
     
 	<div class="slide2-bag"  id="slide2-right">
     	<img src="images/slide2-1.png" alt=""/> 
     </div>
+    
+    <div class="slide2-text white" id="slide2-fade2">
+    	<h3>Shopping is seen by most as a chore.</h3>
+        <h3 class="bluebg">Price is still the main worry of shoppers today.</h3>
+    </div>
 </section>
 
-
+<section class="slide3" id="slide3-fade">
+	<div class="darkblue-point" id="slide3-drop">
+    	<h1>WHO USES COUPONS, AND WHY DO THEY USE THEM?</h1>
+        <h4>After talking to 100s of shoppers we realized that we can’t build a “profile” or singular persona of a coupon user – shoppers today desire more control, more relevance and more value regardless of age, gender or background.</h4>
+    </div>
+    <div class="white-box">
+    	<h2>THERE IS NO "TYPICAL" COUPON USER</h2>
+		<h3>Demographics among coupon users vary greatly</h3>
+    </div>
+</section>
 </div>
 
 	<script type="text/javascript" src="js/greensock/TweenMax.min.js"></script>
@@ -71,17 +85,28 @@
     <script type="text/javascript" src="js/lib.js"></script>
 	<script>
 		$(document).ready(function() {
+			// Call Scroll library
 			var controller = $.superscrollorama();
+			
+			// Adjust Scroll Point by 400 pixels when called
+			var scrollDuration = 400; 
+			
 			// Slide Animation Timeline
 			
 			// Slide 1
 			controller.addTween('#slide1-fade', TweenMax.from($('#slide1-fade'), .5, {css:{opacity:0}}));
 			controller.addTween('#slide1-drop', TweenMax.from($('#slide1-drop'), .5, {css:{top:0}}));
-			controller.addTween('#slide1-right', TweenMax.from($('#slide1-right'), .5, {css:{left:0, opacity: 0}}));
+			controller.addTween('#slide1-right', TweenMax.from($('#slide1-right'), .5, {css:{opacity:0, left:0}}));
 			
 			// Slide 2
 			controller.addTween('#slide2-fade', TweenMax.from($('#slide2-fade'), .5, {css:{opacity:0}}));
-			controller.addTween('#slide2-right', TweenMax.from($('#slide2-right'), .5, {css:{left:0, opacity: 0}}));
+			controller.addTween('#slide2-fade2', TweenMax.from($('#slide2-fade2'), .9, {css:{opacity:0}}), scrollDuration);
+			controller.addTween('#slide2-right', TweenMax.from($('#slide2-right'), .25, {css:{opacity:0, rotation: 720}, ease:Quad.easeOut}));
+			
+			// Slide 3
+			controller.addTween('#slide3-fade', TweenMax.from($('#slide3-fade'), .5, {css:{opacity:0}}));
+			controller.addTween('#slide3-drop', TweenMax.from($('#slide3-drop'), .5, {css:{top:2450, opacity:0}}));
+
 		});
 	</script>
 </body>

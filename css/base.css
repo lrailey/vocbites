@@ -126,6 +126,10 @@ margin-bottom: 20px;
 color: #333333;	
 }
 
+.white h1, .white h2, .white h3, .white h4, .white p {
+color: #333333;	
+}
+
 /* Wrapper */
 
 .secwrap {
@@ -392,5 +396,46 @@ background-image: url(../images/slide2-2.png);
 .slide2-bag {
 margin-top: 250px;
 position: absolute;	
+z-index:40;
 }
 
+.slide2-text {
+width:1040px;
+height: 500px;	
+padding-top: 330px;
+}
+
+.slide2-text h3 {
+width: 1000px;
+padding-right: 40px;
+padding-top: 60px;
+padding-bottom: 60px;
+display: block;
+font-size: 30px;
+text-align: right;
+}
+
+.slide2-text h3.bluebg {
+background-color: #ceebf5;
+}
+
+/* Slide 3 */
+
+section.slide3 {
+background-image: url(../../../Desktop/VOC%20Code/images/slide3-1.png);
+background-repeat: no-repeat;
+background-position: center bottom;	
+height: 550px;
+max-width: 1040px;	
+margin-top: 150px;
+}
+
+.slide3 .white-box {
+background-color: #ffffff;
+width: 1040px;
+padding-bottom: 50px;
+padding-top: 40px;	
+position: absolute;
+margin-top: 587px;
+text-align: center;
+}

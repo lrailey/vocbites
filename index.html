@@ -7,9 +7,9 @@
 <link href="css/base.css" rel="stylesheet" type="text/css">
 </head>
 
-<body class="secwrap">
-<div class="wrap" id="content-wrapper">
+<body class="secwrap" id="secwrapid">
 <header>
+	<div class="headcontainer">
 	<div class="logo">
     	<img src="images/logo.png" width="213" height="40" alt=""/>
     </div>
@@ -17,7 +17,9 @@
     <div class="hamburger hamburger-off">
     	<img src="images/hamburger.png" width="41" height="33" alt=""/>
     </div>
+    </div>
 </header>
+<div class="wrap" id="content-wrapper">
 <div class="floating-menu menuover">
     <ul>
         <li><a href="#start">Start</a></li>
@@ -43,7 +45,7 @@
 <section class="slide1" id="slide1-fade">
 	
 	<div class="blue-point" id="slide1-drop">
-    	<h1>Grocery Shopping: Universal Truths</h1>
+    	<h1 id="slide1-marker">Grocery Shopping: Universal Truths</h1>
         <h4>While we’ve talked to all types of people from all over the country, there are common grocery shopping habits and behaviors they all share.</h4>
     </div>
     
@@ -97,15 +99,18 @@
 			controller.addTween('#slide1-fade', TweenMax.from($('#slide1-fade'), .5, {css:{opacity:0}}));
 			controller.addTween('#slide1-drop', TweenMax.from($('#slide1-drop'), .5, {css:{top:0}}));
 			controller.addTween('#slide1-right', TweenMax.from($('#slide1-right'), .5, {css:{opacity:0, left:0}}));
+			controller.addTween('#slide1-drop', TweenMax.to($('#secwrapid'), .5, {css:{backgroundColor:"#00ADEF"}}));
 			
 			// Slide 2
 			controller.addTween('#slide2-fade', TweenMax.from($('#slide2-fade'), .5, {css:{opacity:0}}));
 			controller.addTween('#slide2-fade2', TweenMax.from($('#slide2-fade2'), .9, {css:{opacity:0}}), scrollDuration);
 			controller.addTween('#slide2-right', TweenMax.from($('#slide2-right'), .25, {css:{opacity:0, rotation: 720}, ease:Quad.easeOut}));
+			controller.addTween('#slide2-fade', TweenMax.to($('#secwrapid'), .5, {css:{backgroundColor:"#00ADEF"}}));
 			
 			// Slide 3
 			controller.addTween('#slide3-fade', TweenMax.from($('#slide3-fade'), .5, {css:{opacity:0}}));
 			controller.addTween('#slide3-drop', TweenMax.from($('#slide3-drop'), .5, {css:{top:2450, opacity:0}}));
+			controller.addTween('#slide3-drop', TweenMax.to($('#secwrapid'), .5, {css:{backgroundColor:"#274A80"}}));
 
 		});
 	</script>

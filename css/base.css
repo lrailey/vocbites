@@ -134,11 +134,11 @@ color: #333333;
 
 .secwrap {
 padding-top: 112px;	
-background-color: #f3f3f3;
+background-color: #494949;
 }
 
 .wrap {
-margin-left: auto;
+margin-left: auto;	
 margin-right: auto;
 max-width: 1040px;	
 overflow: hidden;
@@ -148,13 +148,21 @@ background-color: #ffffff;
 /* Header */
 
 header {
+width: 100%;
+height: 112px;
+background-color: #333333;	
+position: fixed;
+top: 0px;	
+z-index: 99;
+}
+
+header div.headcontainer {
 width: 1040px;	
 display: block;
 height: 112px;
 background-color: #333333;
-position: fixed;
-top: 0px;	
-z-index: 99;
+margin-left: auto;
+margin-right: auto;
 }
 
 .logo {
@@ -380,7 +388,6 @@ text-align: center;
 section.slide2 {
 height: 550px;
 max-width: 1040px;	
-margin-top: 100px;
 }
 
 section.slide2 h1 {
@@ -427,7 +434,6 @@ background-repeat: no-repeat;
 background-position: center bottom;	
 height: 550px;
 max-width: 1040px;	
-margin-top: 150px;
 }
 
 .slide3 .white-box {

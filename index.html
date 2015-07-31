@@ -33,7 +33,7 @@
     </ul>
 </div>
 <a name="start">&nbsp;</a>
-<section class="slide-index">
+<section class="slide-index" id="indexslide">
 	<h1>Voice of the Consumer Bites</h1>
     <h2>Highlights from Insights & Design Primary Research</h2>
     <h2 class="buttoncontainer"><a href="#section1" class="button">START HERE</a></h2>
@@ -94,6 +94,9 @@
 			var scrollDuration = 400; 
 			
 			// Slide Animation Timeline
+			
+			// Index Slide 
+			controller.addTween('#indexslide', TweenMax.to($('#secwrapid'), .5, {css:{backgroundColor:"#00ADEF"}}));
 			
 			// Slide 1
 			controller.addTween('#slide1-fade', TweenMax.from($('#slide1-fade'), .5, {css:{opacity:0}}));
